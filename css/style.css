@@ -108,6 +108,8 @@ header {
   top: 0;
   color: white;
   min-height: 100%;
+  
+  
 }
 
 header #header-img {
@@ -120,10 +122,13 @@ header #header-img {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  
+  
 }
 
 header #name {
   margin-bottom: 20px;
+  
 }
 
 header #header-text {
@@ -153,6 +158,7 @@ header .console-text span {
 @media screen and (max-width: 500px) {
   header #header-img {
     background-image: url('../images/header-wallpaper_mobile.webp');
+    
   }
 
   header #header-text h1 {
@@ -161,6 +167,7 @@ header .console-text span {
 
   header .console-text span {
     font-size: 25px;
+    
   }
 }
 
@@ -169,6 +176,7 @@ header .show-more {
   text-align: center;
   margin-top: 50%;
   animation: fadeInOut 1.5s linear;
+ 
 }
 
 header .show-more a {
@@ -181,7 +189,8 @@ header .show-more a {
 header .show-more a:hover {
   color: white;
   border-color:var(--main-bg-color);
-  border-radius: 3px 7px;
+  border-radius: 5px 9px;
+  box-shadow:var(--main-bg-color) 1px 2px 9px 2px;
   text-decoration: none;
 }
 
@@ -195,23 +204,26 @@ header .show-more a:hover {
     margin: auto;
     width: 100%;
     z-index: 9999;
-    box-shadow: var(--main-bg-color) 0px 2px 10px;
+    
   }
 /* About navbar */
 
   nav {
     background: #1a1818f7;
     height: 80px;
+    box-shadow:var(--main-bg-color) 0px 2px 9px 1px;
   }
 
   nav .logo {
+
     padding: 20px;
   }
 
   nav ul {
     list-style: none;
     float: right;
-    margin-top: 15px;
+    margin-top: 16px;
+    
   }
 
   nav ul li {
@@ -220,11 +232,13 @@ header .show-more a:hover {
 
   nav ul .section {
     padding: 12px 15px 12px 15px;
+    
   }
 
   nav ul li a {
     font-size: 20px;
     color: rgb(250, 249, 249);
+    
   }
 
   nav ul li a:hover {
@@ -234,11 +248,15 @@ header .show-more a:hover {
 
   nav ul li a:focus {
     color: #29f800;
+    box-shadow:var(--main-bg-color) 0px 0px 9px 10px;
+    border-radius: 5px;
     text-decoration: none;
   }
 
   nav img {
-    width: 40px;
+    margin: -21px;
+    width: 75px;
+    border-radius: 50px;
     vertical-align: middle;
   }
 }
@@ -705,6 +723,8 @@ div #profile-about{
   width: 40px;
   height: 50px;
   margin-right: 10px;
+  
+  
 }
 
 #contact .contact-logo:hover {
@@ -717,11 +737,12 @@ div #profile-about{
 
 #contact textarea {
   resize: vertical;
+  background-color: var(--main-bg-color)
 }
 
 #contact .custom-hr {
-  background-color: #1bd095;
-  ;
+  background-color: var(--main-bg-color);
+  
 }
 
 @media screen and (max-width: 1000px) {
@@ -739,7 +760,6 @@ div #profile-about{
 
 button#send-contact-form {
   background: var(--main-bg-color);
-  ;
   border-color: transparent;
 }
 
@@ -750,7 +770,7 @@ button#send-contact-form:hover {
 /* FIN CONTACT */
 
 footer {
-  background: #1B242F;
+  background: #1e2a38;
   color: rgb(247, 245, 245);
   height: 75px;
   padding: 18px;
